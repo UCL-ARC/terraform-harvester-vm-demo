@@ -1,3 +1,3 @@
 output "vm_ids" {
-  value = harvester_virtualmachine.vm.*.id
+  value = harvester_virtualmachine.vm[*].id
 }
