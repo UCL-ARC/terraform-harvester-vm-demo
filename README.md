@@ -8,6 +8,8 @@ It has a suggested skeleton structure and GitHub Actions workflows.
 
 It will deploy a virtual machine using the Harvester Terraform provider.
 
+This template is suitable for deploying VMs on Condenser.
+
 ## Usage
 
 1. Use this template when creating a new repo. If creating a self-contained module,
