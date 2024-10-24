@@ -65,11 +65,11 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_img_display_name"></a> [img\_display\_name](#input\_img\_display\_name) | n/a | `string` | n/a | yes |
-| <a name="input_namespace"></a> [namespace](#input\_namespace) | n/a | `string` | n/a | yes |
-| <a name="input_network_name"></a> [network\_name](#input\_network\_name) | n/a | `string` | n/a | yes |
-| <a name="input_prefix"></a> [prefix](#input\_prefix) | n/a | `string` | n/a | yes |
-| <a name="input_public_key"></a> [public\_key](#input\_public\_key) | n/a | `string` | n/a | yes |
+| <a name="input_img_display_name"></a> [img\_display\_name](#input\_img\_display\_name) | Display name of an image in the harvester-public namespace | `string` | n/a | yes |
+| <a name="input_namespace"></a> [namespace](#input\_namespace) | Namespace that the SSH public key and network are already deployed in, and that the VM will be deployed in | `string` | n/a | yes |
+| <a name="input_network_name"></a> [network\_name](#input\_network\_name) | Name of a network in the specified namespace | `string` | n/a | yes |
+| <a name="input_prefix"></a> [prefix](#input\_prefix) | Prefix for the VM name | `string` | n/a | yes |
+| <a name="input_public_key"></a> [public\_key](#input\_public\_key) | Name of an SSH key in the specified namespace | `string` | n/a | yes |
 | <a name="input_vm_count"></a> [vm\_count](#input\_vm\_count) | n/a | `number` | `1` | no |
 
 ## Outputs
