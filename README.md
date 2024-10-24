@@ -10,6 +10,14 @@ It will deploy a virtual machine using the Harvester Terraform provider.
 
 ## Usage
 
+1. Use this template when creating a new repo. If creating a self-contained module,
+   name your repo according to the module naming convention of terraform-<PROVIDER>-<NAME>.
+2. Change CODEOWNERS to you or your Team.
+
+## Deployment
+
+This module can be deployed as-is.
+
 Create a new file `env.tfvars` with the following contents to configure the variables
 for the module:
 
