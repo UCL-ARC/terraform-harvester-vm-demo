@@ -17,12 +17,12 @@ resource "harvester_cloudinit_secret" "cloud-config" {
   namespace = var.namespace
 
   user_data = templatefile("cloud-init.tmpl.yml", {
-      public_key_openssh = data.harvester_ssh_key.mysshkey.public_key
-    })
+    public_key_openssh = data.harvester_ssh_key.mysshkey.public_key
+  })
 }
 
 resource "harvester_virtualmachine" "vm" {
-  
+
   count = var.vm_count
 
   name                 = "${var.prefix}${format("%02d", count.index + 1)}"
