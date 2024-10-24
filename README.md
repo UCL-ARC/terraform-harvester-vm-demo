@@ -31,8 +31,8 @@ public_key       = "my-key" # Your key in the namespace
 network_name     = "my-net" # A network in the namespace; this can also be left empty
 ```
 
-Obtain a suitable kubeconfig file to access the Harvester cluster. Then you can
-deploy this module as follows:
+[Obtain a suitable kubeconfig file](https://docs.harvesterhci.io/v1.3/faq/#how-can-i-access-the-kubeconfig-file-of-the-harvester-cluster)
+to access the Harvester cluster. Then you can deploy this module as follows:
 
 ``` sh
 KUBECONFIG=/path/to/kubeconfig.yaml terraform apply -var-file=env.tfvars
