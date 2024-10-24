@@ -3,13 +3,15 @@
 > [!IMPORTANT]
 > This repository is still under construction!
 
-A Terraform template for new ARC Terraform projects or modules. It has a suggested skeleton structure and GitHub Actions workflows.
+A Terraform template for new ARC Terraform projects or modules.
+It has a suggested skeleton structure and GitHub Actions workflows.
 
-It will deploy a virtual machine using the Harvester terraform provider.
+It will deploy a virtual machine using the Harvester Terraform provider.
 
 ## Usage
 
-Create a new file `env.tfvars` with the following contents to configure the variables for the module:
+Create a new file `env.tfvars` with the following contents to configure the variables
+for the module:
 
 ``` terraform
 img_display_name = "almalinux-9.3" # Display name of an image in the harvester-public namespace
@@ -19,7 +21,8 @@ public_key       = "my-key" # Your key in the namespace
 network_name     = "my-net" # A network in the namespace; this can also be left empty
 ```
 
-Obtain a suitable kubeconfig file to access the Harvester cluster. Then you can deploy this module as follows:
+Obtain a suitable kubeconfig file to access the Harvester cluster. Then you can
+deploy this module as follows:
 
 ``` sh
 KUBECONFIG=/path/to/kubeconfig.yaml terraform apply -var-file=env.tfvars
