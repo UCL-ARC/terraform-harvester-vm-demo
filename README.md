@@ -50,14 +50,14 @@ KUBECONFIG=/path/to/kubeconfig.yaml terraform apply -destroy -var-file=env.tfvar
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.8.5 |
-| <a name="requirement_harvester"></a> [harvester](#requirement\_harvester) | 0.6.6 |
+| <a name="requirement_harvester"></a> [harvester](#requirement\_harvester) | 0.6.7 |
 | <a name="requirement_random"></a> [random](#requirement\_random) | 3.6.3 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_harvester"></a> [harvester](#provider\_harvester) | 0.6.6 |
+| <a name="provider_harvester"></a> [harvester](#provider\_harvester) | 0.6.7 |
 | <a name="provider_random"></a> [random](#provider\_random) | 3.6.3 |
 
 ## Modules
@@ -68,11 +68,11 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [harvester_cloudinit_secret.cloud-config](https://registry.terraform.io/providers/harvester/harvester/0.6.6/docs/resources/cloudinit_secret) | resource |
-| [harvester_virtualmachine.vm](https://registry.terraform.io/providers/harvester/harvester/0.6.6/docs/resources/virtualmachine) | resource |
+| [harvester_cloudinit_secret.cloud-config](https://registry.terraform.io/providers/harvester/harvester/0.6.7/docs/resources/cloudinit_secret) | resource |
+| [harvester_virtualmachine.vm](https://registry.terraform.io/providers/harvester/harvester/0.6.7/docs/resources/virtualmachine) | resource |
 | [random_id.secret](https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/id) | resource |
-| [harvester_image.img](https://registry.terraform.io/providers/harvester/harvester/0.6.6/docs/data-sources/image) | data source |
-| [harvester_ssh_key.mysshkey](https://registry.terraform.io/providers/harvester/harvester/0.6.6/docs/data-sources/ssh_key) | data source |
+| [harvester_image.img](https://registry.terraform.io/providers/harvester/harvester/0.6.7/docs/data-sources/image) | data source |
+| [harvester_ssh_key.mysshkey](https://registry.terraform.io/providers/harvester/harvester/0.6.7/docs/data-sources/ssh_key) | data source |
 
 ## Inputs
 
